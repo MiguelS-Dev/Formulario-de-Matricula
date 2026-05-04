@@ -31,12 +31,14 @@ main {
 aside {
   background-color: var(--surface-secondary);
   padding: 4rem;
+  display: flex;
+  justify-content: center;
 
   & .aside-container {
     max-width: 31rem;
 
     & > img {
-      margin-top: 2rem;
+      margin-top: 7rem;
     }
   }
 
@@ -50,4 +52,16 @@ aside {
   }
 
 
+}
+
+.img1{
+  margin-bottom: 20px;
+}
+.h21{
+  text-align: start;
+}
+
+.p1{
+  margin-top:20px ;
+  text-align: start;
 }
