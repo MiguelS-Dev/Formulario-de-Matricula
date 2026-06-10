@@ -22,9 +22,13 @@
 
   .checkbox-imagem{
     flex: 0 0 1.5rem;
+    width: 1.5rem;
     height: 1.5rem;
 
     background-image: url(../Assets/Icons/square.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 1.5rem 1.5rem;
   }
 
   &:hover, &:focus-within {

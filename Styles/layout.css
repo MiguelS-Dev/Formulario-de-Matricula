@@ -177,4 +177,14 @@ aside {
   .radio-wrapper {
     grid-template-columns: 1fr;
   }
+
+  .actions-wrapper {
+    gap: .75rem;
+  }
+
+  .actions-wrapper button {
+    padding: .55rem .9rem;
+    font-size: .875rem;
+    border-radius: .4rem;
+  }
 }
