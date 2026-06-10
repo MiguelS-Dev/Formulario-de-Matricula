@@ -65,3 +65,105 @@ aside {
   margin-top:20px ;
   text-align: start;
 }
+
+@media (max-width: 768px) {
+  body {
+    overflow: auto;
+  }
+
+  #app {
+    grid-template-columns: 1fr;
+    height: auto;
+    overflow: visible;
+  }
+
+  main {
+    padding: 1.5rem 1rem;
+
+    & .main-container {
+      max-width: 100%;
+      margin-left: 0;
+    }
+
+    & h1 {
+      font-size: 1.25rem;
+    }
+  }
+
+  aside {
+    padding: 1.5rem 1rem 2rem;
+
+    & .aside-container {
+      max-width: 100%;
+
+      & > img {
+        display: none;
+      }
+    }
+
+    & h2 {
+      font-size: 1.75rem;
+    }
+  }
+
+  form {
+    margin: 2rem 0 0;
+  }
+
+  fieldset + fieldset {
+    margin-top: 2rem;
+  }
+
+  .grid-container {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "rua"
+      "num"
+      "bairro"
+      "cidade"
+      "estado";
+  }
+
+  .radio-wrapper {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .terms-wrapper {
+    flex-direction: column;
+    gap: .5rem;
+  }
+
+  .actions-wrapper {
+    flex-direction: column;
+  }
+
+  .actions-wrapper button {
+    width: 100%;
+  }
+
+  button.btn-secundary {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  main {
+    padding: 1.25rem .875rem;
+  }
+
+  aside {
+    padding: 1.25rem .875rem 1.75rem;
+  }
+
+  main h1 {
+    font-size: 1.125rem;
+  }
+
+  aside h2 {
+    font-size: 1.5rem;
+  }
+
+  .radio-wrapper {
+    grid-template-columns: 1fr;
+  }
+}
