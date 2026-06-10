@@ -73,11 +73,15 @@ aside {
 
   #app {
     grid-template-columns: 1fr;
+    grid-template-areas:
+      "aside"
+      "main";
     height: auto;
     overflow: visible;
   }
 
   main {
+    grid-area: main;
     padding: 1.5rem 1rem;
 
     & .main-container {
@@ -91,13 +95,20 @@ aside {
   }
 
   aside {
+    grid-area: aside;
     padding: 1.5rem 1rem 2rem;
 
     & .aside-container {
       max-width: 100%;
+      display: flex;
+      flex-direction: column;
 
       & > img {
-        display: none;
+        order: -1;
+        display: block;
+        margin-top: 0;
+        margin-bottom: 1.5rem;
+        align-self: center;
       }
     }
 
